@@ -1,0 +1,138 @@
+body {
+    margin : 0; 
+    padding: 0;
+    background : rgb(214, 214, 214);
+}
+
+
+
+
+/*header*/
+
+header{
+    margin-top : 10px;
+    font-family: Arvo;
+}
+header .container{
+    display: flex;
+}
+header #avatar{
+    flex : 1;
+    margin-left : 20px;
+}
+header #avatar a{
+    content: url(../images/ribbon.png);
+    width : 50%;
+    position : relative;
+    bottom: 178px;
+    left : 18px;
+}
+header #avatar img{
+    width : 130px;
+    border: 1px solid black;
+    border-radius : 20px; 
+    margin : 5px;
+    margin-left : 15%;
+}
+header #cordonees{
+    flex: 7;
+    margin-left : 40px;
+}
+header #cordonees h2{
+    letter-spacing: 2px;
+}
+header #cordonees p{
+    margin-left : 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.section_divider hr {
+    height : 4px;
+    background : black ;
+    border:none;
+}
+
+/*section one*/
+
+
+section {
+    margin : 30px;
+    font-family : Ubuntu;
+    line-height: 30px;
+}
+section .paragraph .container{
+    margin-top: 50px;
+    margin-bottom:50px;
+    margin-left : 30px;
+}
+
+section .paragraph hr{
+    width : 50%;
+    height : 4px;
+    background: black;
+    border: none;
+}
+#dp, #fr,#cp{
+    text-decoration: underline;
+}
+section .paragraph .container #dp::before{
+    content: url(../images/certificate.png);
+    position: relative;
+    top: 7px;
+    padding-right: 10px;
+}
+section .paragraph .container #fr::before{
+    content: url(../images/hat.png);
+    position: relative;
+    top: 7px;
+    padding-right: 10px;
+}
+section .paragraph .container #cp::before{
+    content: url(../images/skills.png);
+    position: relative;
+    top: 7px;
+    padding-right: 10px;
+}
+section .paragraph .container b{
+    text-decoration: underline;
+}
+section .paragraph .container span{
+    margin-left : 218px;
+}
+
+
+/*Footer section*/
+.footer_divider hr{
+    margin:0px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 1px;
+    margin: 0;
+}
+.footer_sect{
+    display: flex;
+}
+.footer_sect .right{
+    border-right : 2px solid white;
+}
+.footer_sect .article{
+    flex : 1;
+    margin-left : 60px;
+    padding-bottom: 20px;
+}
+.footer_sect .article h3{
+    margin:0px;
+    margin-top: 10px;
+    text-decoration: underline;
+    font-family: Aleo;
+}
+.footer_sect .article ul{
+    margin: 0px;
+    font-family: Ubuntu;
+    line-height: 30px;
+}
+.footer_sect .article ul b{
+    text-decoration: underline;
+}
