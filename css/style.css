@@ -1,138 +1,270 @@
 body {
-    margin : 0; 
-    padding: 0;
-    background : rgb(214, 214, 214);
-}
-
-
-
-
-/*header*/
-
-header{
-    margin-top : 10px;
-    font-family: Arvo;
-}
-header .container{
-    display: flex;
-}
-header #avatar{
-    flex : 1;
-    margin-left : 20px;
-}
-header #avatar a{
-    content: url(../images/ribbon.png);
-    width : 50%;
-    position : relative;
-    bottom: 178px;
-    left : 18px;
-}
-header #avatar img{
-    width : 130px;
-    border: 1px solid black;
-    border-radius : 20px; 
-    margin : 5px;
-    margin-left : 15%;
-}
-header #cordonees{
-    flex: 7;
-    margin-left : 40px;
-}
-header #cordonees h2{
-    letter-spacing: 2px;
-}
-header #cordonees p{
-    margin-left : 20px;
-    letter-spacing: 2px;
-    line-height: 30px;
-}
-.section_divider hr {
-    height : 4px;
-    background : black ;
-    border:none;
-}
-
-/*section one*/
-
-
-section {
-    margin : 30px;
-    font-family : Ubuntu;
-    line-height: 30px;
-}
-section .paragraph .container{
-    margin-top: 50px;
-    margin-bottom:50px;
-    margin-left : 30px;
-}
-
-section .paragraph hr{
-    width : 50%;
-    height : 4px;
-    background: black;
-    border: none;
-}
-#dp, #fr,#cp{
-    text-decoration: underline;
-}
-section .paragraph .container #dp::before{
-    content: url(../images/certificate.png);
-    position: relative;
-    top: 7px;
-    padding-right: 10px;
-}
-section .paragraph .container #fr::before{
-    content: url(../images/hat.png);
-    position: relative;
-    top: 7px;
-    padding-right: 10px;
-}
-section .paragraph .container #cp::before{
-    content: url(../images/skills.png);
-    position: relative;
-    top: 7px;
-    padding-right: 10px;
-}
-section .paragraph .container b{
-    text-decoration: underline;
-}
-section .paragraph .container span{
-    margin-left : 218px;
-}
-
-
-/*Footer section*/
-.footer_divider hr{
+    width: 100%;
+    padding:0px;
     margin:0px;
+    background: #000;
 }
-footer{
-    background-color: black;
-    color: white;
-    padding: 1px;
-    margin: 0;
-}
-.footer_sect{
-    display: flex;
-}
-.footer_sect .right{
-    border-right : 2px solid white;
-}
-.footer_sect .article{
-    flex : 1;
-    margin-left : 60px;
-    padding-bottom: 20px;
-}
-.footer_sect .article h3{
-    margin:0px;
-    margin-top: 10px;
-    text-decoration: underline;
-    font-family: Aleo;
-}
-.footer_sect .article ul{
+.container{
     margin: 0px;
-    font-family: Ubuntu;
-    line-height: 30px;
+    color: white;
 }
-.footer_sect .article ul b{
+
+
+/*Header*/
+header{
+    padding-top: 25px;
+
+}
+#nav-bar{
+    float: right;
+    background-color: #000;
+    
+    margin: 0px;
+    padding-right: 100px;
+
+}
+header ul{
+    margin:0px;
+    list-style-type: none;
+    text-align: center;
+    padding-right: 30px;
+}
+
+#nav-bar, #logo{
+
+}
+header ul li {
+   float: left;
+
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 20px 16px;
+    color: #AEAFA9;
+    font-family: Ubuntu;
+    display: block;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 14px;
     text-decoration: underline;
+    letter-spacing: 2px;
+    transition: font-size 0.2s;
+}
+header ul li a:hover{
+     color: white;
+     background: #F2B134;
+     font-size: 16px;
+}
+ 
+header #logo {
+    border: 3px solid #F2B134;
+    float: left;
+    padding: 8px 17px; 
+    margin-left: 40px;
+    letter-spacing: 5px;
+}
+header #logo a{
+    color: #F2B134;
+    padding: 16px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 25px;
+}
+
+/*Section 1*/
+#section-one{
+    background: black;
+}
+#image-section{
+        width: 80%;
+        padding: 0px;
+        margin:0px;
+}
+#image-section img{
+    width: 100%;
+    padding: 0px;
+    margin:0px;
+    padding-left: 120px;
+}
+#mind-blowing{
+    position: absolute;
+    bottom: 35%;;
+    left: 12%;
+
+}
+#mind-blowing p{
+    font-family: Indie Flower;
+    font-size: 28px;
+    letter-spacing: 3px;
+    transform: rotate(-20deg); 
+}
+#mind-blowing-img{
+    position: absolute;
+    bottom: 80px;
+    left: 194px;
+    width: 30%;
+}
+#mind-blowing-img img{
+    width: 20%;
+    transform: rotate(-30deg);
+}
+/*Section 2, The Quote*/
+#section-two{
+    text-align: center;
+    font-size: 28px;
+    font-family: Inconsolata;
+
+}
+.quotes{
+    font-size: 40px;
+    color: #F0AA21;
+}
+
+#section-two p {
+    display: inline;
+    font-family: 'Charmonman', cursive;
+    
+}
+
+#section-two p .programmer a{
+    padding: 6px 9px;
+    margin-left: 7px;
+    margin-right: 7px;
+    text-decoration: none;
+    color: white;
+    background-color: #03A596;
+    font-weight: bold;
+}
+#section-two p .programmer a:hover{
+    color: black;
+    background-color: aliceblue
+}
+#section-two p .number{
+    color: #F2B134; 
+    font-weight: bold;
+}
+#section-two p #autor a{
+    text-decoration:none;
+    font-size: 40px;
+    color: #03A596;
+    transition: font-size 0.8s;
+}
+#section-two p #autor a:hover{
+    color:white;
+    font-size: 42px;
+}
+
+
+/* Section Three*/
+
+#section-three{
+    margin-top: 117px;
+    margin-bottom: 120px;
+}
+#section-three .container{
+    display: inline-flex;
+    justify-content: center;
+}
+#first-div, #second-div{
+    width: 40%;
+    padding: 25px;
+    font-family: Inconsolata;
+}
+#first-div{
+    padding-top: 5%;
+}
+
+#first-div h2{
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+#first-div p{
+
+}
+#first-div input{
+    width: 80px;
+    float: right;
+    border: none;
+    transition: 0.5s;
+}
+#first-div input:hover{
+    background: #F2B134;
+    color: white;
+    width: 90px;
+
+}
+
+#second-div{
+    display: inline-flex;
+}
+.articles{
+    padding:15px;
+    text-align: center;
+    border: 2px solid white;
+
+    
+}
+.articles h2{
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.articles h2 a{
+    
+    color: #fff;
+}
+.articles p{
+
+}
+.articles .imgs{
+    width: 60%;
+    margin-left:20%;
+}
+.imgs img{
+    width: 100%;
+    justify-content: center;
+}
+/*Footer section*/
+#section-four{
+}
+#section-four .container{
+    text-align: center;
+    font-family: Inconsolata;
+}
+#footer-first-section{
+
+}
+#footer-first-section-text{
+       
+}
+#footer-first-section-text h2{
+    letter-spacing: 3px;
+}
+#footer-first-section-text #social-icons a, i {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    width: 20px;
+}
+#copyrights a{
+    color:white;
+    transition: 0.5s;
+}
+#copyrights a:hover{
+    color: #03A596;
+}
+
+
+/*Section devider*/
+.devider{
+    clear: both;
 }
