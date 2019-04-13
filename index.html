@@ -304,18 +304,6 @@
 
     <!-- laxxx js lib -->
     <script src="node_modules/lax.js/lib/lax.min.js"></script>
-    <script>
-        window.onload = function () {
-            lax.setup() // init
-
-            const updateLax = () => {
-                lax.update(window.scrollY)
-                window.requestAnimationFrame(updateLax)
-            }
-
-            window.requestAnimationFrame(updateLax)
-        }
-    </script>
     <script src="src/dist/js/laxxx_init.js"></script>
 
     <!-- Type Js -->
