@@ -50,8 +50,11 @@
                 you want to know more about me you can visite <a href="#">About</a> section.
             </p>
             <div class="getme">
-                <button type="button" class="btn btn-dark "><a href="#" class="text-decoration-none text-light">HIRE ME</a></button>
-                <button type="button" class="btn btn-dark "><a href="https://drive.google.com/file/d/1VL0-b64D-2EYzD9ynx_VtGkGCWPQyRqV/view?usp=sharing" class="text-decoration-none text-light">GET CV</a></button>
+                <button type="button" class="btn btn-dark "><a href="#" class="text-decoration-none text-light">HIRE
+                        ME</a></button>
+                <button type="button" class="btn btn-dark "><a
+                        href="https://drive.google.com/file/d/1VL0-b64D-2EYzD9ynx_VtGkGCWPQyRqV/view?usp=sharing"
+                        class="text-decoration-none text-light">GET CV</a></button>
             </div>
         </article>
         <div class="hero">
@@ -97,15 +100,15 @@
                     <a href="#" class="psource view-p">Project source <i class="fab fa-github-square"></i></a>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="src/assets/imgs/youcoder.png" class="card-img-top" alt="a placeholder img" data-toggle="modal"
-                        data-target="#exampleModal" data-id="4" onclick="getId(this)">
+                    <img src="src/assets/imgs/youcoder.png" class="card-img-top" alt="a placeholder img"
+                        data-toggle="modal" data-target="#exampleModal" data-id="4" onclick="getId(this)">
                     <p class="seeMore" data-toggle="modal" data-target="#exampleModal" data-id="4"
                         onclick="getId(this)">See more</p>
                     <a href="#" class="psource view-p">Project source <i class="fab fa-github-square"></i></a>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="src/assets/imgs/storygen.PNG" class="card-img-top" alt="a placeholder img" data-toggle="modal"
-                        data-target="#exampleModal" data-id="5" onclick="getId(this)">
+                    <img src="src/assets/imgs/storygen.PNG" class="card-img-top" alt="a placeholder img"
+                        data-toggle="modal" data-target="#exampleModal" data-id="5" onclick="getId(this)">
                     <p class="seeMore" data-toggle="modal" data-target="#exampleModal" data-id="5"
                         onclick="getId(this)">See more</p>
                     <a href="#" class="psource view-p">Project source <i class="fab fa-github-square"></i></a>
@@ -301,6 +304,18 @@
 
     <!-- laxxx js lib -->
     <script src="node_modules/lax.js/lib/lax.min.js"></script>
+    <script>
+        window.onload = function () {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+    </script>
     <script src="src/dist/js/laxxx_init.js"></script>
 
     <!-- Type Js -->
