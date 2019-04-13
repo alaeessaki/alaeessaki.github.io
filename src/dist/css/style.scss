@@ -1,0 +1,400 @@
+$nav-font-size: 14px;
+
+$fonts:(
+    primary: Arial
+    );
+$colors :(
+    primary: black,
+    reverse: white
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+};
+
+@function font($font-name){
+    @return map-get($fonts, $font-name )
+};
+
+%logo{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: color(primary);
+    font-family : font(primary);
+    font-weight: 600;
+    border: 4px solid black;
+    padding: 0px 1.25rem;
+}
+
+@keyframes MoveDown {
+    0%{
+        transform: translateY(+30%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+html,
+body {
+    margin: 0
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    .navbar {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+        .navbar-container {
+            margin: 1rem 3.8rem;
+            margin-left: 2.5rem;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+
+                h1 {
+                    margin-bottom: 12px !important;
+                    a {
+                        @extend %logo;
+                    }
+
+                }
+            }
+
+            .navlist-container {
+                margin:0;
+                display: flex;
+                list-style-type: none;
+                align-items: center;
+                justify-content: flex-end;
+
+                li {
+                    padding: 4px 2.5rem;
+                    a{
+                        text-decoration: none;
+                        color: color(primary);
+                        font-size: $nav-font-size;
+                        font-weight: 700;
+                    }
+                    .special-nav{
+                        color: color(reverse);
+                        background-color: black;
+                        padding-bottom: 0.4rem;
+                        padding-top: 100%;
+                        padding-right: 1.5rem;
+                        padding-left: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .first-section{
+        
+        .resume{
+            .typed-text{
+                p{
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+            }
+            margin-top: 7rem;
+            margin-left: 7rem;
+            h1{
+                font-size: 1.2rem;
+                font-family: font(primary);
+                font-weight: 700;
+                margin-bottom: 2rem;
+            }
+            p{
+                font-size: 1rem;
+                font-family: font(primary);
+                font-weight: 700;
+                line-height: 2.1rem;
+            }
+            a{
+                text-decoration: underline;
+                color: color(primary);            }
+            .getme{
+             
+                button{
+                    border-radius: 10px;
+                }
+            }
+        }
+        .hero{
+            width: 57rem;
+            margin-right: 8rem;
+            img{
+                width:100%;
+            }
+            .social-medias{
+                margin-top: 0;
+                a{
+                    text-decoration: none;
+                    i{
+                        color: color(primary);
+                        padding-right: 2.5rem;
+                        font-size: 23px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .viewportfolio{
+        animation: MoveDown 1s;
+        margin-top: 2.1rem;
+        margin-bottom: 3rem;
+        .single-row{
+            a{
+                font-size: 1.2rem;
+                color: black;
+                text-decoration: none;
+                font-weight: 600;
+                font-family: font(primary);
+            }   
+            i{
+                color: black;
+            }
+        }
+        
+    }
+    .portfolio{
+        .single-row{
+            .cards-cont{  
+                width: 80%; 
+                .card{
+                    margin:1rem;
+                    .seeMore{
+                        position: absolute;
+                        left: 33.5%;
+                        top: 30%;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: white;
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                        display: none;
+                        text-transform: uppercase;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        .card-img-top{
+                            -webkit-filter: brightness(60%); /* Safari 6.0 - 9.0 */
+                            filter: brightness(30%);
+                            transition: filter 0.16s;
+                        }
+                        .seeMore{
+                            display: block;
+                            transition: display 0.16s;
+                        }
+                    }
+                    .view-p{
+                       text-align: center;
+                       margin: 0;
+                       padding: .5rem;
+                       font-size: 1rem;
+                       font-family: font(primary);
+                       font-weight: 600;
+                       text-decoration: none;
+                       color: color(primary);
+                       a{
+                           font-size: 1rem;
+                           padding-left: .5rem;
+                       }
+
+                       &:hover{
+                        background-color: black; 
+                        color: color(reverse);
+                        cursor: pointer;
+                        a{
+                            color: color(reverse);
+                        }
+                    }
+                    }
+                }
+            }
+            .view-more{
+                margin-top: 1.5rem;
+                a{
+                    color: color(primary);
+                    text-decoration: underline;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .last-section{
+        margin-top: 5rem;
+        .single-row{
+            .box{
+                width : 290px;
+                height: 290px;
+                position: absolute;
+                z-index: -1;
+                border: 14px solid black;
+                right: 10%;
+                top: 220%;
+                opacity: 0.5;
+                transform: rotate(45deg);
+            }
+            .head{
+                h1{
+                    font-family: font(primary);
+                    font-weight: 600;
+                    margin-left: 3rem;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                }   
+                hr{
+                    background-color: color(primary);
+                    float: left;
+                    width: 6rem;
+                    height: .2rem;
+                    margin-left: 2rem;
+                    margin-top:0;
+                }
+            }
+            .main-body{
+                margin-top: 5rem;
+                margin-left: 1rem;
+                .img-cont{
+                    width: 20rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .list{
+                    li{
+                        font-family: font(primary);
+                        font-size: 1.15rem;
+                        font-weight: 600;
+                        line-height: 3.6rem;
+                    }
+                }
+            }
+            .sec-foot{
+                a{
+                    float: right;
+                    text-decoration: underline;
+                    color: color(primary);
+                    font-family: font(primary);
+                    font-weight: 600;
+                    margin-top: .5rem;
+                    margin-right: 4rem;
+                }
+            }
+        }
+    }
+    footer{
+        margin-bottom: 0;
+        margin-top: 8rem;
+        background-color: color(primary);
+        color: color(reverse); 
+        font-size: .75rem;
+        font-family: font(primary);
+        font-weight: 600;
+        .cont{
+            .single-row{
+               margin-top: 2rem;
+                hr{
+                    width: .2rem;
+                    height: 18rem;
+                    background-color: color(reverse);
+                }
+                .article{
+                    width: 30%;
+                }
+                .first-art{
+                    margin-left: 1rem;
+                    margin-right: 3rem;
+                    .single-row{
+                        .article-first-sec{
+                            .img-container{
+                                width: 14rem;
+                                margin: 1rem;
+                                img{
+                                    width:100%;
+                                }
+                            }
+                            .red-container{
+                                margin-top: 1rem;
+                            }
+                        }
+                        .article-second-sec{
+                            p{
+                                margin-left: 1rem;
+                                a{
+                                    text-decoration: underline;
+                                    color: color(reverse);
+                                }
+                            }
+
+                        }
+                    }
+                }
+                .second-art{
+                    .single-row{
+                        .res{
+                            margin: 3rem .5rem;
+                            .img-container{
+                                margin-right: 1rem;
+                                img{
+                                    width: 44px;
+                                }
+                            }
+                            .red-container{
+                                p{
+                                    margin: 0;
+                                    a{
+                                        text-decoration: underline;
+                                        color: color(reverse);
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+                .third-art{
+                    .single-row{
+                        div{
+                            a{
+                                text-decoration: none;
+                                color: color(reverse);
+                                font-size: 1rem;
+                            }
+                            p{
+                                margin-top: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .copyrights{
+                margin-top: 10rem;
+                p{
+
+                }
+            }
+        }
+    }
+}
+
+.errortitle{
+   
+}
+.errorImg{
+   width: 50% !important;
+   position: relative;
+   left: 30%;
+}
