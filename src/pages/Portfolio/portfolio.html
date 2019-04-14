@@ -11,6 +11,7 @@
 
     <!-- Third party css -->
     <link rel="stylesheet" href="../../dist/css/style.css">
+    <link rel="stylesheet" href="../../dist/css/media.css">
 
     <!--Normalize-->
     <link rel="stylesheet" href="../../lib/normalize.css">
@@ -32,11 +33,22 @@
             <div class="logo">
                 <h1><a href="../../../index.html">Alae</a></h1>
             </div>
-            <ul class="navlist-container">
-                <li><a href="#">About</a></li>
-                <li><a class="special-nav" href="#">Portfolio</a></li>
-                <li><a href="../contact/contact.html">Contact</a></li>
+            <ul class="navlist-container" id="menu-list">
+                <li><a href="src/pages/about/about.html">About</a></li>
+                <li><a class="special-nav" href="src/pages/Portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="src/pages/contact/contact.html">Contact</a></li>
+                <li class="li-spec Menu"><a onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul>
+            <div class="plash" onclick="menuClose()"></div>
+            <div id="togglemenu">
+                <div class="container">
+                    <ul>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a class="special-nav" href="../Portfolio/portfolio.html">Portfolio</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -45,7 +57,7 @@
 
     </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true"> 
+        aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -62,7 +74,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <a href="#" id="mlink"><button type="button" class="btn btn-dark">Go to github page<i class="fab fa-github-square" style="padding-left: .6rem;"></i></button></a>
+                    <a href="#" id="mlink"><button type="button" class="btn btn-dark">Go to github page<i
+                                class="fab fa-github-square" style="padding-left: .6rem;"></i></button></a>
                 </div>
             </div>
         </div>
@@ -102,7 +115,8 @@
                             </div>
                             <div class="red-container">
                                 <p>
-                                    Follow <a href="https://twitter.com/es_alae">@es_alae</a> for web design & development
+                                    Follow <a href="https://twitter.com/es_alae">@es_alae</a> for web design &
+                                    development
                                     articles, opinions and links</p>
                             </div>
                         </div>
@@ -112,7 +126,8 @@
                             </div>
                             <div class="red-container">
                                 <p>
-                                    View <a href="https://github.com/alaeessaki">@alaeessaki</a> on GitHub for open-source projects </p>
+                                    View <a href="https://github.com/alaeessaki">@alaeessaki</a> on GitHub for
+                                    open-source projects </p>
                             </div>
                         </div>
                         <div class="d-flex res align-items-center">
@@ -120,7 +135,8 @@
                                 <img src="../../assets/logos/linkedin-logo (1).png">
                             </div>
                             <div class="red-container">
-                                <p>View my <a href="https://www.linkedin.com/in/alae-essaki-15485016a/">LinkedIn profile</a></p>
+                                <p>View my <a href="https://www.linkedin.com/in/alae-essaki-15485016a/">LinkedIn
+                                        profile</a></p>
                             </div>
                         </div>
                     </div>
@@ -168,6 +184,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/portfolio.js"></script>
+    <script src="../../../src/dist/js/menu.js"></script>
 </body>
 
 </html>

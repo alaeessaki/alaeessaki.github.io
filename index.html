@@ -8,6 +8,8 @@
 
     <!--main style-->
     <link rel="stylesheet" href="src/dist/css/style.css">
+    <link rel="stylesheet" href="src/dist/css/media.css">
+
     <!-- third party css -->
     <link rel="stylesheet" href="src/pages/Portfolio/css/portfolio.css">
     <!--Normalize-->
@@ -29,13 +31,25 @@
             <div class="logo">
                 <h1><a href="#">Alae</a></h1>
             </div>
-            <ul class="navlist-container">
+            <ul class="navlist-container" id="menu-list">
                 <li><a href="src/pages/about/about.html">About</a></li>
                 <li><a class="special-nav" href="src/pages/Portfolio/portfolio.html">Portfolio</a></li>
                 <li><a href="src/pages/contact/contact.html">Contact</a></li>
+                <li class="li-spec Menu"><a onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul>
+            <div class="plash" onclick="menuClose()"></div>
+            <div id="togglemenu">
+                <div class="container">
+                    <ul>
+                        <li><a href="src/pages/about/about.html">About</a></li>
+                        <li><a class="special-nav" href="src/pages/Portfolio/portfolio.html">Portfolio</a></li>
+                        <li><a href="src/pages/contact/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
     <!-- The first section -->
     <section class="first-section d-flex">
         <article class="resume">
@@ -227,7 +241,7 @@
                 <hr>
                 <article class="article second-art">
                     <div class="single-row">
-                        <div class="d-flex res align-items-center">
+                        <div class="d-flex res align-items-center special">
                             <div class="img-container">
                                 <img src="src/assets/logos/twitter-logo-silhouette.png">
                             </div>
@@ -238,7 +252,7 @@
                                     articles, opinions and links</p>
                             </div>
                         </div>
-                        <div class="d-flex res align-items-center">
+                        <div class="d-flex res align-items-center special">
                             <div class="img-container">
                                 <img src="src/assets/logos/github.png">
                             </div>
@@ -248,7 +262,7 @@
                                     open-source projects </p>
                             </div>
                         </div>
-                        <div class="d-flex res align-items-center">
+                        <div class="d-flex res align-items-center special">
                             <div class="img-container">
                                 <img src="src/assets/logos/linkedin-logo (1).png">
                             </div>
@@ -315,6 +329,7 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <script src="src/dist/js/getlinks.js"></script>
+    <script src="src/dist/js/menu.js"></script>
 </body>
 
 </html>
