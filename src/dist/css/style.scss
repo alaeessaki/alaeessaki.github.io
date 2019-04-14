@@ -107,11 +107,11 @@ body {
             }
             .menutoggled{
                 right:0 !important;
-                transition: right 1s;
+                transition: right 0.5s;
             }
             .menuclosed{
                 right:-20rem !important;
-                transition: right 1s;
+                transition: right 0.5s;
             }
             .plash{
                 height: 100vh;

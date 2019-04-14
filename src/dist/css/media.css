@@ -26,6 +26,7 @@
         position: fixed;
         z-index: 500;
         height: 16vh;
+        top: 0;
     }
     body .last-section .single-row .box {
         top: 235%;

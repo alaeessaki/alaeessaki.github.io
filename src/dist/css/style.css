@@ -113,14 +113,14 @@ body .navbar .navbar-container .navlist-container .li-spec a i {
 
 body .navbar .navbar-container .menutoggled {
   right: 0 !important;
-  -webkit-transition: right 1s;
-  transition: right 1s;
+  -webkit-transition: right 0.5s;
+  transition: right 0.5s;
 }
 
 body .navbar .navbar-container .menuclosed {
   right: -20rem !important;
-  -webkit-transition: right 1s;
-  transition: right 1s;
+  -webkit-transition: right 0.5s;
+  transition: right 0.5s;
 }
 
 body .navbar .navbar-container .plash {

@@ -1,0 +1,16 @@
+@media screen and (max-width: 795px) {
+    #cardList{
+        margin-top: 15rem;
+    }
+    
+}
+@media screen and (max-width: 450px){
+    #cardList .descr{
+        width: 109%;
+    }
+}
+@media screen and (max-width: 570px){
+    #cardList .descr{
+        width: 109%;
+    }
+}
