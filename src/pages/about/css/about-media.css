@@ -1,8 +1,0 @@
-@media screen and (max-width: 1024px) {
-    .cont{
-        flex-direction: column;
-    }
-    body .cont .name h1{
-        margin-top: 14vh;
-    }
-}
